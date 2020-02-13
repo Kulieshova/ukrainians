@@ -52,7 +52,7 @@ body{
   }
 
   th, td {
-    padding: 5px 0px;
+    padding: 7px 10px;
   }
 
   #f20 {
@@ -149,7 +149,6 @@ body{
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);
     border-radius: 15px;
-    /* width: 80%; */
   }
   
   .btn span {
@@ -174,4 +173,13 @@ body{
   .btn:hover:after {
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+
+  .cards_quote {
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .cards_text {
+    text-align: center;
   }
