@@ -28,14 +28,55 @@
 							</footer>
 						</div>
 				</div>
-
-                <div class="dropdown">
-                    <div class="dropbtn"><img src="flags/us.png" class="flag">en</div>
-                    <div class="dropdown-content">
-                      <!-- <a href="#"></a> -->
-                      <a href="#"><img src="flags/uk.png" class="flag">uk</a>
-                      <a href="#"><img src="flags/ru.png" class="flag">ru</a>
+                
+            <!-- Languages desktop version-->
+                <div class="dropdown" id="dropfull">
+                    <div class="dropbtn">
+                        <form action="{% url 'set_language' %}" method="post" style=" display: table-cell; vertical-align: middle; height: 30px;">
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="en"/>
+                            <img src="flags/us.png" class="flag"><input type="submit" value="en" style="background-color: #68686800; padding: 3px;"/>
+                        </form>
                     </div>
+
+                    <div class="dropdown-content">
+                        <form action="{% url 'set_language' %}" method="post">
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="uk"/>
+                            <img src="flags/uk.png" class="flag"><input type="submit" value="uk" style="background-color: #68686800; padding: 3px;"/>
+                        </form>
+
+                        <form action="{% url 'set_language' %}" method="post">
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="ru"/>
+                            <img src="flags/ru.png" class="flag"><input type="submit" value="ru" style="background-color: #68686800; padding: 3px; height: 30px;"/>
+                        </form>
+                    </div>                    
+                </div>
+
+                <!-- Languages mobile version-->
+                <div class="dropdown" id="dropmob">
+                    <div class="dropbtn">
+                        <form action="{% url 'set_language' %}" method="post" style=" display: table-cell; vertical-align: middle; height: 30px;">
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="en"/>
+                            <img src="flags/us.png" class="flag"><input type="submit" value="" style="background-color: #68686800; padding: 3px;"/>
+                        </form>
+                    </div>
+
+                    <div class="dropdown-content">
+                        <form action="{% url 'set_language' %}" method="post">
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="uk"/>
+                            <img src="flags/uk.png" class="flag"><input type="submit" value="" style="background-color: #68686800; padding: 3px;"/>
+                        </form>
+
+                        <form action="{% url 'set_language' %}" method="post">
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                            <input name="language" type="hidden" value="ru"/>
+                            <img src="flags/ru.png" class="flag"><input type="submit" value="" style="background-color: #68686800; padding: 3px; height: 30px;"/>
+                        </form>
+                    </div>                    
                 </div>
 
 			<!-- Banner -->

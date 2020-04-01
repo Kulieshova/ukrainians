@@ -1,14 +1,15 @@
-  .dropbtn {
+.dropbtn {
     background-color: #aaaaaab7;
     color: white;
-    /* padding: 7px; */
     font-size: 14px;
     border: none;
     border-radius: 5px;
-    min-width: 50px;
-    padding: 0px 5px;
-    /* padding-bottom: 0px; */
-    height: auto;
+    max-width: 70px;
+    min-width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    overflow: hidden;
   }
   
   .dropdown {
@@ -24,24 +25,33 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(241, 241, 241, 0.781);
-    min-width: 50px;
+    background-color: #f1f1f1c7;
     z-index: 1;
+    max-width: 70px;
+    min-width: 60px;
+    overflow: hidden;
   }
   
-  .dropdown-content a {
-    color: black;
-    padding: 5px 5px 0px 5px;
-    text-decoration: none;
-    display: block;
-  }
-
   .flag {
-    margin-right: 5px;
+    margin: 5px;
+    margin-top: 10px;
+    float: left;
   }
   
-  .dropdown-content a:hover {background-color: rgba(209, 209, 209, 0.781);}
+.dropdown-content form:hover {background-color: rgba(209, 209, 209, 0.781);}
 
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #686868b7;}
+
+@media screen and (max-width: 736px) {
+  #dropfull {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 737px) {
+  #dropmob {
+    display: none;
+  }
+}
