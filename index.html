@@ -35,7 +35,7 @@
                         <form action="{% url 'set_language' %}" method="post" style=" display: table-cell; vertical-align: middle; height: 30px;">
                             <input name="next" type="hidden" value="{{ redirect_to }}"/>
                             <input name="language" type="hidden" value="en"/>
-                            <img src="flags/us.png" class="flag"><input type="submit" value="en" style="background-color: #68686800; padding: 3px;"/>
+                            <input type="submit" value="en" id="d-en"/>
                         </form>
                     </div>
 
@@ -43,13 +43,13 @@
                         <form action="{% url 'set_language' %}" method="post">
                             <input name="next" type="hidden" value="{{ redirect_to }}"/>
                             <input name="language" type="hidden" value="uk"/>
-                            <img src="flags/uk.png" class="flag"><input type="submit" value="uk" style="background-color: #68686800; padding: 3px;"/>
+                            <input type="submit" value="uk" id="d-uk"/>
                         </form>
 
                         <form action="{% url 'set_language' %}" method="post">
                             <input name="next" type="hidden" value="{{ redirect_to }}"/>
                             <input name="language" type="hidden" value="ru"/>
-                            <img src="flags/ru.png" class="flag"><input type="submit" value="ru" style="background-color: #68686800; padding: 3px; height: 30px;"/>
+                            <input type="submit" value="ru" id="d-ru"/>
                         </form>
                     </div>                    
                 </div>
@@ -60,22 +60,20 @@
                         <form action="{% url 'set_language' %}" method="post" style=" display: table-cell; vertical-align: middle;">
                             <input name="next" type="hidden" value="{{ redirect_to }}"/>
                             <input name="language" type="hidden" value="en"/>
-                            <img src="flags/us.png" class="flag"><input type="submit" value="" style="background-color: #68686800; padding: 3px;"/>
+                            <input type="submit" value="" id="m-en"/>
                         </form>
                     </div>
 
                     <div class="dropdown-contentm">
-                        <img src="flags/uk.png" class="flag">
-                        <form action="{% url 'set_language' %}" method="post">
+                        <form action="{% url 'set_language' %}" method="post" style=" display: table-cell; vertical-align: top; width: 100%;">
                             <input name="next" type="hidden" value="{{ redirect_to }}"/>
                             <input name="language" type="hidden" value="uk"/>
-                            <input type="submit" value="" style="background-color: #68686800; padding: 3px; height: 10px;"/>
+                            <input type="submit" value="" id="m-uk"/>
                         </form>
-
                         <form action="{% url 'set_language' %}" method="post">
                             <input name="next" type="hidden" value="{{ redirect_to }}"/>
                             <input name="language" type="hidden" value="ru"/>
-                            <img src="flags/ru.png" class="flag"><input type="submit" value="" style="background-color: #68686800; padding: 3px; height: 10px;"/>
+                            <input type="submit" value="" id="m-ru"/>
                         </form>
                     </div>                    
                 </div>
