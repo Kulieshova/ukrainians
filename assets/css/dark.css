@@ -178,8 +178,8 @@ html {
 }
 
 body {
-	background: #f0f4f4;
-	color: #5b5b5b;
+  background: #121212;
+  color: #f3f3f3;
 	font-size: 15pt;
 	line-height: 1.85em;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -215,7 +215,7 @@ h4,
 h5,
 h6 {
 	font-weight: 400;
-	color: #483949;
+  color: #f3f3f3;
 	line-height: 1.25em;
 }
 
@@ -2009,7 +2009,7 @@ header .icon.circled {
 /* Wrapper */
 
 .wrapper {
-	background: #fff;
+	background: rgba(255, 255, 255, 0.226);
 	margin: 0 0 2em 0;
 	padding: 6em 0 6em 0;
 }
@@ -2262,7 +2262,7 @@ body.homepage.is-preload #header:after {
 /* Banner */
 
 #banner {
-	background: #fff;
+	background: rgba(255, 255, 255, 0.226);
 	text-align: center;
 	padding: 4.5em 0 4.5em 0;
 	margin-bottom: 0;
