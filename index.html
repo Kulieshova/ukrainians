@@ -2,10 +2,11 @@
 <html>
 	<head>
 		<title>Hey thereeeee!</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
         <link rel="stylesheet" href="assets/css/main.css" id="stylesheets"/>
-        <link rel="stylesheet" href="assets/css/lang.css" />
+		<link rel="stylesheet" href="assets/css/lang.css"/>
+		<link rel="stylesheet" href="assets/css/switch.css"/>
         <link rel="stylesheet" type="text/css" href="cards.css">
         <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
         <link rel="icon" href="images/icon.png" type="image/png">
@@ -78,6 +79,13 @@
                         </form>
                     </div>                    
                 </div>
+
+
+					<label id="switch" class="switch">
+							<input type="checkbox" onchange="toggleTheme()" id="slider">
+							<span class="slider round"></span>
+						</label>
+
 
 			<!-- Banner -->
 				<section id="banner">
@@ -186,5 +194,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/style.js"></script>
+			<script src="assets/js/switch.js"></script>
 	</body>
 </html>
