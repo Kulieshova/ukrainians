@@ -1,25 +1,31 @@
- // // function to set a given theme/color-scheme
- //        function setTheme(themeName) {
- //            localStorage.setItem('theme', themeName);
- //            document.documentElement.className = themeName;
- //        }
+        var page = document.getElementById('stylesheets');
 
-        // function to toggle between light and dark theme
+        // // function to toggle between light and dark theme
+        // function toggleTheme() {
+        //     if (localStorage.getItem('theme') === 'theme-dark') {
+        //         page.href = 'assets/css/dark.css';
+        //     } else {
+        //         page.href = 'assets/css/main.css';
+        //     }
+        // }
+
+        // var slider = document.getElementById('slider').checked;
+
+        // function toggleTheme() {
+        //     if( slider = true)
+        //     {
+        //         page.href = 'assets/css/dark.css';
+        //     }
+        //     else {
+        //         page.href = 'assets/css/main.css';
+        //     }
+        //     slider = !slider;
+        // }
+
         function toggleTheme() {
-            if (localStorage.getItem('theme') === 'theme-dark') {
-                setTheme('theme-light');
+            if (document.getElementById('slider').checked == true) {
+                page.href = 'assets/css/dark.css';
             } else {
-                setTheme('theme-dark');
+                page.href = 'assets/css/main.css';
             }
         }
-
-        // Immediately invoked function to set the theme on initial load
-        (function () {
-            if (localStorage.getItem('theme') === 'theme-dark') {
-                setTheme('theme-dark');
-                document.getElementById('slider').checked = false;
-            } else {
-                setTheme('theme-light');
-              document.getElementById('slider').checked = true;
-            }
-        })();
