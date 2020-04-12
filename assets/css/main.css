@@ -1,6 +1,6 @@
 
 
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600"); */
 @import url("fontawesome-all.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 
@@ -182,7 +182,7 @@ body {
 	color: #5b5b5b;
 	font-size: 15pt;
 	line-height: 1.85em;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Cormorant Infant', serif;
 	font-weight: 300;
 }
 
@@ -204,7 +204,7 @@ textarea,
 select {
 	font-size: 15pt;
 	line-height: 1.85em;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Cormorant Infant', serif;
 	font-weight: 300;
 }
 
@@ -2873,6 +2873,7 @@ body.homepage.is-preload #header:after {
 	.wrapper {
 		padding: 3em 1em 3em 1em;
 	}
+	
 	/* Header */
 	#header {
 		background-attachment: scroll;
@@ -2953,13 +2954,11 @@ body.homepage.is-preload #header:after {
 .dropbtn {
     background-color: #aaaaaab7;
     color: white;
-    /* padding: 7px; */
     font-size: 14px;
     border: none;
     border-radius: 5px;
     min-width: 50px;
     padding: 0px 5px;
-    /* padding-bottom: 0px; */
     height: auto;
   }
 
@@ -2992,7 +2991,7 @@ body.homepage.is-preload #header:after {
     margin-right: 5px;
   }
 
-  .dropdown-content a:hover {background-color: rgba(209, 209, 209, 0.781);}
+.dropdown-content a:hover {background-color: rgba(209, 209, 209, 0.781);}
 
 .dropdown:hover .dropdown-content {display: block;}
 
