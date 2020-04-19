@@ -2987,10 +2987,6 @@ body.homepage.is-preload #header:after {
     display: block;
   }
 
-  .flag {
-    margin-right: 5px;
-  }
-
 .dropdown-content a:hover {background-color: rgba(209, 209, 209, 0.781);}
 
 .dropdown:hover .dropdown-content {display: block;}
